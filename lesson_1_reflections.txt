@@ -27,9 +27,13 @@ What do you think are the pros and cons of manually choosing when to create a co
 The first that i've found that I can do my work and will do not to change anything because I can forget. Another bad way I don't need to save new inform every hour or every day because I'll not still  finish it.
 
 
+
+
 Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
 
 ......... ???
+
+
 
 
 How can you use the commands git log and git diff to view the history of files?
@@ -58,3 +62,74 @@ To get colored diff output, run git config --global color.ui auto
 
 git diff first_Id second_Id 
 
+
+
+
+
+
+How might using version control make you more confident to make changes that could break something?
+
+I think that I can add new code of new version and will not to see that another man added his code. 
+
+
+Format of      git checkout
+
+You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+  Now that you have your workspace set up, what do you want to try using Git for?
+
+  to creat my project and to add it to Git. but I do'nt know commands -()
+
+
+
+
+Git command review
+
+Compare two commits, printing each line that is present in one commit but not the other.
+
+git diff         will do this. It takes two arguments - the two commit ids to compare. 
+
+Make a copy of an entire Git repository, including the history, onto your own computer.
+
+git clone         will do this. It takes one argument - the url of the repository to copy.
+
+Temporarily reset all files in a directory to their state at the time of a specific commit.
+
+git checkout       will do this. It takes one argument - the commit ID to restore.
+
+Show the commits made in this repository, starting with the most recent.
+
+git log          will do this. It doesn't take any arguments.
+
+
+
+
+
+Behavior of git clone
+
+If someone else gives you the location of their directory or repository, you can copy or clone it to your own computer.
+
+This is true for both copying a directory and cloning a repository.
+
+As you saw in the previous lesson, if you have a URL to a repository, you can copy it to your computer using git clone.
+
+For copying a directory, you weren't expected to know this, but it is possible to copy a directory from one computer to another using the command scp, which stands for "secure copy". The name was chosen because the scp command lets you securely copy a directory from one computer to another.
+
+The history of changes to the directory or repository is copied.
+
+This is true for cloning a repository, but not for copying a directory. The main reason to use git clone rather than copying the directory is because git clone will also copy the commit history of the repository. However, copying can be done on any directory, whereas git clone only works on a Git repository.
+
+If you make changes to the copied directory or cloned repository, the original will not change.
+
+This is true for both copying a directory and cloning a repository. In both cases, you're making a copy that you can alter without changing the original.
+
+The state of every file in the directory or repository is copied.
+
+This is true for both copying a directory and cloning a repository. In both cases, all the files are copied.
