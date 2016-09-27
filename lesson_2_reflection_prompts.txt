@@ -3,7 +3,7 @@ What happens when you initialize a repository? Why do you need to do it?
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-answer : You can use git add to add file to staging area and you can'y do this in working directory.And you can use git status for both.
+answer : You can use git add to add file to staging area and you can't to  do this in working directory.And you can use git status for both.
 
 
 
@@ -22,13 +22,38 @@ We’ve introduced a few new concepts since we last revisited our concept map.
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+don't know (((((((((
+
+
+
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+(May be   you can keep all the time your first way "clean" like *master for not lost your way if you'll have other exp branches)
+
+
+
+
 How do the diagrams help you visualize the branch structure?
+
+(It's help me to see really picture)
+
+
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+don't know (( 
+
+Diagram good for understanding.))
+
+
+
+
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+
+will be many mistakes
